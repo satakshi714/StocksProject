@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+
+{% block content%}
+<div class ='wrapper'>
+    <div class  =  'card-container'>
+    {% for  i in data%}
+{% include 'components/card.html' with ticker=i.ticker  name=i.name  curr_price=i.curr_price%}
+{% endfor %}
+</div>
+</div>
+
+{% endblock %}
