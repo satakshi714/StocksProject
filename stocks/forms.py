@@ -8,7 +8,7 @@ class UserRegistrationForm(forms.ModelForm):
 
     class Meta:
         model = User
-        fields = ['username', 'email', 'password']
+        fields = ['username', 'email', 'first_name', 'last_name', 'password']
 
     def clean(self):
         cleaned_data = super().clean()
@@ -21,3 +21,10 @@ class UserInfoForm(forms.ModelForm):
     class Meta:
         model = UserInfo
         fields = ['phone_number', 'address', 'pancard_number', 'user_image', 'pancard_image']
+
+class BuyStockForm(forms.Form):
+    quantity = forms.IntegerField(min_value=1, label="Quantity")
+
+
+class SellStockForm(forms.Form):
+    quantity = forms.IntegerField(min_value=1, label="Quantity")

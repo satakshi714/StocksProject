@@ -2,10 +2,10 @@
 {
     display: flex;
     justify-content: space-between;
-    background: #55a769;
+    background: #282c34;
     color:white;
     padding  :  20px ;
-    margin :  10px ;
+    margin :  20px ;
     border-radius :  20px;
 
 }
@@ -20,7 +20,7 @@
 
 .nav h3:hover ,  .nav li:hover , .nav a:hover
 {
-    color :  #55a769;
+    color :  deepskyblue;
     cursor: pointer;
     transform: translate(-1px, -3px);
     transition: all 0.3s ease-in-out;
@@ -32,7 +32,7 @@
 }
 
 .footer {
-    background: #55a769;
+    background: #282c34;
     color: white;
     text-align: center;
     padding: 30px 20px;
@@ -55,7 +55,7 @@
 }
 
 .footer li:hover {
-    color: #55a769;
+    color: deepskyblue;
     cursor: pointer;
     transform: scale(1.1);
 }
@@ -69,4 +69,3 @@
 .footer a:hover {
     color: deepskyblue;
 }
-
